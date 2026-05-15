@@ -1,7 +1,5 @@
-import { useState } from 'react';
 
 function Dashboard() {
-    const [disponivel, setDisponivel] = useState(true);
 
   return (
     <div>
@@ -43,10 +41,10 @@ function Dashboard() {
               <td>Clean Code</td>
               <td>Robert Martin</td>
               <td>2008</td>
-              {<td>Disponível</td>}
+              <td>Disponível</td>
               <td>
                 <button className="px-3 py-2 cursor-pointer hover:bg-[#e7318f] transition-colors duration-300 w-30 bg-[#f86cb4] font-semibold">
-                  Emprestar
+                  Disponível
                 </button>
               </td>
             </tr>

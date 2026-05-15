@@ -4,11 +4,12 @@ import { useState } from "react";
 function App() {
   const [active, setActive] = useState("inicio");
 
+  // Define o menu com os itens
   const menu = [
-    { id: "inicio", placeholder: "Início", icone: "" },
-    { id: "listar", placeholder: "Listar Livros", icone: "" },
-    { id: "novo", placeholder: "Novo Livro", icone: "" },
-    { id: "ajustes", placeholder: "Ajustes", icone: "" },
+    { id: "inicio", nome: "Início", icone: "" },
+    { id: "listar", nome: "Listar Livros", icone: "" },
+    { id: "novo", nome: "Novo Livro", icone: "" },
+    { id: "ajustes", nome: "Ajustes", icone: "" },
   ];
 
   return (
@@ -26,7 +27,7 @@ function App() {
                   onClick={() => setActive(item.id)}
                   className={`cursor-pointer py-4 text-center font-bold  transition-colors duration-300 ${active === item.id ? 'bg-blue-100 text-black' : ''}`}
                 >
-                  <a href="#">{item.placeholder}</a>
+                  <a href="#">{item.nome}</a>
                 </li>
               ))}
             </ul>
