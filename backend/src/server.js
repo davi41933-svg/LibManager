@@ -1,7 +1,10 @@
 import express from 'express'
 import cors from 'cors'
+import dotenv from 'dotenv'
 
-import livroRoutes from './routes/livro.routes.js'
+dotenv.config();
+
+// import livroRoutes from './routes/livroRoutes.js'
 
 const app = express();
 

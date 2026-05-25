@@ -1,4 +1,4 @@
-import { livroRepository } from "../repository/livro.repository";
+import { livroRepository } from "../repository/livroRepository.js";
 
 export const livroController = {
 
