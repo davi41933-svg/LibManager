@@ -1,7 +1,7 @@
-import Dashboard from "./components/dashboard";
+import { Dashboard } from "./components/Dashboard";
 import { useState } from "react";
 
-function App() {
+export function App() {
   const [active, setActive] = useState("inicio");
 
   // Define o menu com os itens
