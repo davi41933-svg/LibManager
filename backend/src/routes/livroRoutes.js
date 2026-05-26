@@ -3,7 +3,7 @@ import { livroController } from "../controllers/livroController.js";
 
 const router = Router();
 
-router.get('/livros', livroController.listarLivros);
-router.post('/livros', livroController.cadastrarLivro);
+router.get('/livro', livroController.listarLivros);
+router.post('/livro', livroController.cadastrarLivro);
 
 export default router;
