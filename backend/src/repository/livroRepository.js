@@ -10,6 +10,19 @@ export const livroRepository = {
                 ORDER BY ano DESC 
             `);
 
-            return resultado;
+        return resultado;
+    },
+
+    // Cadastrar livro
+    async cadastrarLivro(titulo, autor, ano, disponivel) {
+        const [resultado] = await pool.query(`
+            INSERT INTO livros (
+            titulo,
+            autor,
+            ano,
+            disponivel
+            ) VALUES (?, ?, ?, ?)`, [titulo, autor, ano, disponivel]);
+
+        return resultado;
     }
 }
